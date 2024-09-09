@@ -1,0 +1,12 @@
+para publicar el front q esta en vs code:
+1.crear aap services en azure con node 18,linux,en el centro de implementaciones escojer
+Local Git(osea desde mi pc local con git se subira)
+2. copiar la uri(para git) generada en azure
+3.en vscode:
+a.git remote add azu https://froasistencia.scm.azurewebsites.net:443/froasistencia.git
+(para registrar la uri de azure con el nombre azu en git)
+b.git push -u azu master (para subir a azure,luego automaticamente instala dependencias,hace build y ejecuta
+en azure)
+4.click en link en azure del proyecto
+
+https://froasistencia.azurewebsites.net

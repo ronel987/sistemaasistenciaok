@@ -1,0 +1,14 @@
+back:con VS2022 y Csharp
+ pueda subirlo a azure en 2024:
+Front es con node, React y tipescript
+Debo subir a azure como 3 proyectos independientes:
+1. la BD, debo crear 1ro en azure un server y una bd vacia con mismo nombre, obtengo script de la bd local(SqlServer) y 
+lo ejecuto en la bd de Azure Data Studio, con eso ya esta en la nube azure
+2. (cree proy nuevo) backend, desde VS2022,creo Pry; ASP.net core web ApI con .net8.0 ,me logueo y puedo subirlo a azure directamente en la opcion de publicar
+  es una api con varios endpoints, me dara una url basica y desde alli podria acceder a los endpoint
+3. frontend, 1ro creo un proyecto "App Services" vacio nodeV18 en azure,me genera la url del fronend y una uri para git.
+  En azure, centro de implementacion debo escojer "Local Git" y poner mi credencial.
+.Desde VS code(cree nuevo proy con nodev18 como hacer todo denuevo) me logueo y uso git:git push -u + uri
+y hago un push para subirlo a azure
+
+asi lo hice y me resulto

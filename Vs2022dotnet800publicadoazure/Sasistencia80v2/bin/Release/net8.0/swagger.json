@@ -1,0 +1,1255 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Sasistencia80, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Alumno": {
+      "get": {
+        "tags": [
+          "Alumno"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Alumno"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Alumno"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Alumno"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Alumno/{id}": {
+      "get": {
+        "tags": [
+          "Alumno"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Alumno"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Alumno"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Alumno"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Asistenciaalu": {
+      "get": {
+        "tags": [
+          "Asistenciaalu"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Asistenciaalu"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Asistenciaalu"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Asistenciaalu"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Asistenciaalu/{id}": {
+      "get": {
+        "tags": [
+          "Asistenciaalu"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Asistenciaalu"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Asistenciaalu"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Asistenciaalu"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Asistenciadoc": {
+      "get": {
+        "tags": [
+          "Asistenciadoc"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Asistenciadoc"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Asistenciadoc"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Asistenciadoc"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Asistenciadoc/{id}": {
+      "get": {
+        "tags": [
+          "Asistenciadoc"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Asistenciadoc"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Asistenciadoc"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Asistenciadoc"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Curso": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Curso"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Curso"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Curso/{id}": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Curso"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Curso"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Curso"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Cursodocente": {
+      "get": {
+        "tags": [
+          "Cursodocente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Cursodocente"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Cursodocente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Cursodocente"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Cursodocente/{id1}/{id2}": {
+      "get": {
+        "tags": [
+          "Cursodocente"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id1",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "id2",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Cursodocente/{id}": {
+      "put": {
+        "tags": [
+          "Cursodocente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Cursodocente"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cursodocente"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Docente": {
+      "get": {
+        "tags": [
+          "Docente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Docente"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Docente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Docente"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Docente/{id}": {
+      "get": {
+        "tags": [
+          "Docente"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Docente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Docente"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Docente"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horariodoc": {
+      "get": {
+        "tags": [
+          "Horariodoc"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Horariodoc"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Horariodoc"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Horariodoc"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Horariodoc/{id}": {
+      "get": {
+        "tags": [
+          "Horariodoc"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Horariodoc"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Horariodoc"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Horariodoc"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Alumno": {
+      "type": "object",
+      "properties": {
+        "aluid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "aluestado": {
+          "type": "boolean"
+        },
+        "dni": {
+          "type": "string"
+        },
+        "fechaRegistro": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "apellidomat": {
+          "type": "string"
+        },
+        "apellidopat": {
+          "type": "string"
+        },
+        "direccion": {
+          "type": "string"
+        },
+        "genero": {
+          "type": "boolean"
+        },
+        "nombres": {
+          "type": "string"
+        },
+        "asistenciaalus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Asistenciaalu"
+          }
+        }
+      }
+    },
+    "Anoescolar": {
+      "type": "object",
+      "properties": {
+        "aeid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "aenombre": {
+          "type": "string"
+        },
+        "aeestado": {
+          "type": "boolean"
+        },
+        "aefecfin": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "aefecini": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "grados": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Grado"
+          }
+        }
+      }
+    },
+    "Asistenciaalu": {
+      "type": "object",
+      "properties": {
+        "fecid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fecano": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "marcacion": {
+          "type": "string"
+        },
+        "docid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "aluid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fecestado": {
+          "type": "boolean"
+        },
+        "alu": {
+          "$ref": "#/definitions/Alumno"
+        },
+        "doc": {
+          "$ref": "#/definitions/Docente"
+        }
+      }
+    },
+    "Asistenciadoc": {
+      "type": "object",
+      "properties": {
+        "fdpid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fdpestado": {
+          "type": "boolean"
+        },
+        "fdpfecha": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "hcid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "asmarca": {
+          "type": "boolean"
+        },
+        "marcamomento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "hc": {
+          "$ref": "#/definitions/Horariodoc"
+        }
+      }
+    },
+    "Curso": {
+      "type": "object",
+      "properties": {
+        "curid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "curestado": {
+          "type": "boolean"
+        },
+        "curnombre": {
+          "type": "string"
+        },
+        "grdid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cursodocentes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Cursodocente"
+          }
+        },
+        "grd": {
+          "$ref": "#/definitions/Grado"
+        }
+      }
+    },
+    "Cursodocente": {
+      "type": "object",
+      "properties": {
+        "curid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "docid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cdfecasig": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "cur": {
+          "$ref": "#/definitions/Curso"
+        },
+        "doc": {
+          "$ref": "#/definitions/Docente"
+        },
+        "horariodocs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Horariodoc"
+          }
+        }
+      }
+    },
+    "DateOnly": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "month": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "day": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dayOfWeek": {
+          "$ref": "#/definitions/DayOfWeek"
+        },
+        "dayOfYear": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "dayNumber": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        }
+      }
+    },
+    "DayOfWeek": {
+      "format": "int32",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "type": "integer"
+    },
+    "Docente": {
+      "type": "object",
+      "properties": {
+        "docid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "docestado": {
+          "type": "boolean"
+        },
+        "dni": {
+          "type": "string"
+        },
+        "fechaRegistro": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "apellidomat": {
+          "type": "string"
+        },
+        "apellidopat": {
+          "type": "string"
+        },
+        "direccion": {
+          "type": "string"
+        },
+        "genero": {
+          "type": "boolean"
+        },
+        "nombres": {
+          "type": "string"
+        },
+        "asistenciaalus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Asistenciaalu"
+          }
+        },
+        "cursodocentes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Cursodocente"
+          }
+        }
+      }
+    },
+    "Grado": {
+      "type": "object",
+      "properties": {
+        "grdid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "grdestado": {
+          "type": "boolean"
+        },
+        "grdnombre": {
+          "type": "string"
+        },
+        "aeid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ae": {
+          "$ref": "#/definitions/Anoescolar"
+        },
+        "cursos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Curso"
+          }
+        }
+      }
+    },
+    "Horariodoc": {
+      "type": "object",
+      "properties": {
+        "hcid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hcdia": {
+          "type": "string"
+        },
+        "hchoraini": {
+          "$ref": "#/definitions/TimeOnly"
+        },
+        "hchorafin": {
+          "$ref": "#/definitions/TimeOnly"
+        },
+        "curid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "docid": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "asistenciadocs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Asistenciadoc"
+          }
+        },
+        "cursodocente": {
+          "$ref": "#/definitions/Cursodocente"
+        }
+      }
+    },
+    "TimeOnly": {
+      "type": "object",
+      "properties": {
+        "hour": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "minute": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "second": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "millisecond": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "microsecond": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "nanosecond": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "ticks": {
+          "format": "int64",
+          "type": "integer",
+          "readOnly": true
+        }
+      }
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "$ref": "#/definitions/DateOnly"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

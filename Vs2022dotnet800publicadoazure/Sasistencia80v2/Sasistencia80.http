@@ -1,0 +1,6 @@
+@Sasistencia80_HostAddress = http://localhost:5072
+
+GET {{Sasistencia80_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

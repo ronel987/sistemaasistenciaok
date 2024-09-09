@@ -1,0 +1,8 @@
+1.en elback Visual Studio 2019 o 2017 con C#:
+la app web(api sin pantallas) esta en azure y tiene un dominio base en internet, cada endpoint tiene un url derivado del base:ejm:/api/alumno
+2.la bd esta en azure y se comunica con la api
+
+3.en el front nodejs hecho con v18, reack  con el IDE VisualStudio code, desde VScode se uso git
+para subir(push) el front a azure(previamente se crea un proy vacio nodev18 en azure)
+4.tanto el back como el front en azure estan como "App Services"
+

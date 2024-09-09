@@ -1,0 +1,3 @@
+a los modelos q tienen objetos de otras clases como un campo
+debo agregar un constructor sin el objeto para q el endpoint
+no me pida q le envie un objeto incrustado cargado
